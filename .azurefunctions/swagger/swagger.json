@@ -1,0 +1,42 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "title": "funcoes.azurewebsites.net",
+    "version": "1.0.0"
+  },
+  "host": "funcoes.azurewebsites.net",
+  "basePath": "/",
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/api/SasTokenUpload": {
+      "post": {
+        "operationId": "/api/SasTokenUpload/post",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "securityDefinitions": {
+    "apikeyQuery": {
+      "type": "apiKey",
+      "name": "code",
+      "in": "query"
+    }
+  }
+}
