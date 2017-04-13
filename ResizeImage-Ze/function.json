@@ -1,0 +1,33 @@
+{
+  "bindings": [
+    {
+      "path": "servicos/Demo/Upload/{name}",
+      "type": "blobTrigger",
+      "name": "image",
+      "direction": "in",
+      "connection": "AzureWebJobsDashboard"
+    },
+    {
+      "path": "servicos/Demo/Upload-sm/{name}",
+      "type": "blob",
+      "name": "imageSmall",
+      "direction": "out",
+      "connection": "AzureWebJobsDashboard"
+    },
+    {
+      "path": "servicos/Demo/Upload-md/{name}",
+      "type": "blob",
+      "name": "imageMedium",
+      "direction": "out",
+      "connection": "AzureWebJobsDashboard"
+    },
+    {
+      "type": "blob",
+      "name": "imageThumbnail",
+      "path": "servicos/Demo/Upload-thumbnail/{name}",
+      "connection": "AzureWebJobsDashboard",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
